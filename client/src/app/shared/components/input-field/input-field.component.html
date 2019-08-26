@@ -1,0 +1,12 @@
+<mat-form-field >
+  <input
+    matInput
+    [type]="type"
+    [placeholder]="placeholder"
+    [formControl]="control"
+    [errorStateMatcher]="errorMatcher"
+  >
+  <mat-error>
+    <form-field-error [error]="control.errors"></form-field-error>
+  </mat-error>
+</mat-form-field>
